@@ -27,8 +27,8 @@ const lists = [
   },
   {
     name: 'performance', list: [
-      { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian ' },
-      { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA' }
+      { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
+      { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA', url: 'https://nxpclab.info/vol.54/' }
     ]
   },
   {
@@ -50,10 +50,11 @@ const Profile = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="profile" />
-      <StaticImage src="../images/profile.jpg" alt="profile image" />
+      <StaticImage src="../images/profile.jpg" alt="profile image" width={720} />
       <h1 style={{ margin: '16px 0 0 0', fontSize: '1rem' }}>
         KEITA Miyashita | 宮下恵太
       </h1>
+      <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
         1995年 北海道生まれ。アーティスト / エンジニア。電気・情報・通信・音などを扱った作品の制作や、サウンドパフォーマンスを行う。
       </p>

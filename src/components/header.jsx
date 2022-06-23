@@ -85,7 +85,7 @@ const Header = ({ location }) => {
                 <ul style={{ listStyle: "none", position: 'absolute', bottom: '32px' }}>
                     {links.map((link) => {
                         return (
-                            <li style={{ margin: '8px 0' }} key={link.name}>
+                            <li style={{ fontSize: '0.9rem', margin: '8px 0 0 0' }} key={link.name}>
                                 <Link target="_blank" to={link.href}>{link.name}</Link>
                             </li>
                         )

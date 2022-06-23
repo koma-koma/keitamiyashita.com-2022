@@ -10,24 +10,20 @@ const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  // if (posts.length === 0) {
-  //   return (
-  //     <Layout data={data} location={location} title={siteTitle}>
-  //       <Seo title="All posts" />
-  //       <p>
-  //         No blog posts found. Add markdown posts to "content/blog" (or the
-  //         directory you specified for the "gatsby-source-filesystem" plugin in
-  //         gatsby-config.js).
-  //       </p>
-  //     </Layout>
-  //   )
-  // }
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <Seo title="index" />
+        <StaticImage src="../images/top_image.png" alt="top image" />
+      </Layout>
+    )
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="index" />
       <StaticImage src="../images/top_image.png" alt="top image" />
-      <h2>info</h2>
+      <h2 style={{ fontSize: '1.1rem', margin: '16px 0 0 0' }}>info</h2>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -36,26 +32,27 @@ const Index = ({ data, location }) => {
             <>
               <li key={post.fields.slug}>
                 <article
-                  className="post-list-item"
+                  className="info-list-item"
                   itemScope
                   itemType="http://schema.org/Article"
                 >
-                  <header>
-                    <h2>
-                      <Link to={post.fields.slug} itemProp="url">
+                  <Link to={post.fields.slug} itemProp="url">
+                    <header>
+                      <h2 style={{ fontSize: '0.9rem', margin: '8px 0 0 0' }}>
                         <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
+                      </h2>
+                      <small>{post.frontmatter.date}</small>
+                    </header>
+                    <section>
+                      <p
+                        style={{ fontSize: '0.8rem', margin: '8px 0 0 0' }}
+                        dangerouslySetInnerHTML={{
+                          __html: post.frontmatter.description || post.excerpt,
+                        }}
+                        itemProp="description"
+                      />
+                    </section>
+                  </Link>
                 </article>
               </li>
             </>

@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 
 import Header from "./header"
 
+import style from "../style.css"
+
 
 const mainStyles = {
   position: 'relative',
@@ -26,16 +28,20 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
 
+  // React.useEffect(() => {
+
+  // })
+
   return (
     <div className="" data-is-root-path={isRootPath}>
       <Header location={location} />
-      <main className="main-contents" style={mainStyles}>{children}</main>
+      <main className="main-contents wrapper" style={mainStyles}>{children}</main>
       <footer style={footerStyles}>
         <span style={{
           position: 'absolute',
           padding: 0,
           right: '32px',
-          bottom: '32px',
+          bottom: '26px',
         }}>©2022 keitamiyashita</span>
       </footer>
     </div >
