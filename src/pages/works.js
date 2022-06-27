@@ -65,9 +65,9 @@ const About = ({ data, location }) => {
           }
 
           return (
-            <li key={post.fields.slug} style={{ marginBottom: '64px' }}>
+            <li key={post.fields.slug} style={{ marginBottom: '32px' }}>
               <article
-                className="post-list-item"
+                className="works-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
@@ -103,7 +103,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { fields: { collection: { eq: "works" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { draft: { eq: false } },
+        fields: { collection: { eq: "works" } }
+      },
+      sort: {
+        fields: [frontmatter___date], order: DESC
+      }) {
       nodes {
         excerpt
         fields {

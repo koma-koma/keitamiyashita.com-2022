@@ -22,7 +22,16 @@ const WorksPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p style={{ display: 'inline-block', marginBottom: '16px' }}>{post.frontmatter.date}</p>
+          <div style={{ position: 'absolute', display: 'inline-block', marginTop: '4px', marginBottom: '16px', right: '32px' }}>
+            {post.frontmatter.tags.map((tag) => {
+              return (
+                <span style={{ border: 'solid 1px #4f5969', borderRadius: '2px', padding: '1px 6px', marginLeft: '8px' }}>
+                  {tag}
+                </span>
+              )
+            })}
+          </div>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -81,9 +90,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "YYYY")
         category
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

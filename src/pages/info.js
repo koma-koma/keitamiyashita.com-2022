@@ -8,10 +8,42 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  const header = (
+    <div style={{ position: 'fixed', top: '32px', zIndex: 200 }}>
+      <h1 style={{ marginTop: '-8px', marginBottom: 0, display: 'inline-block' }}>info</h1>
+      {/* <div style={{ display: 'inline-block' }}>
+            <span
+              style={{
+                backgroundColor: art ? 'black' : null,
+                color: art ? 'white' : null,
+                padding: '1px',
+                marginLeft: '16px',
+                marginRight: '10px',
+                cursor: "pointer",
+              }}
+              onClick={() => setArt(!art)}
+            >
+              artwokrs
+            </span>
+            <span
+              style={{
+                background: client ? 'black' : null,
+                color: client ? 'white' : null,
+                cursor: "pointer",
+              }}
+              onClick={() => setClient(!client)}
+            >
+              clientwokrs
+            </span>
+          </div> */}
+    </div>
+  )
+
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="info" />
+        {header}
         <p>
           ...
         </p>
@@ -22,6 +54,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="info" />
+      {header}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           console.log(post);
@@ -34,22 +67,22 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                <Link to={post.fields.slug} itemProp="url">
+                  <header>
+                    <h2>
                       <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
+                    </h2>
+                    <small>{post.frontmatter.date}</small>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                      }}
+                      itemProp="description"
+                    />
+                  </section>
+                </Link>
               </article>
             </li>
           )
@@ -69,7 +102,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { collection: { eq: "info" } } },
+      filter: {
+        frontmatter: { draft: { eq: false } },
+        fields: { collection: { eq: "info" } }
+      },
       sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt
@@ -81,6 +117,7 @@ export const pageQuery = graphql`
           title
           description
           tags
+          draft
         }
       }
     }

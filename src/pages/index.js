@@ -72,7 +72,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 5, filter: { fields: { collection: { eq: "info" } }}, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+        limit: 5,
+        filter: { frontmatter: { draft: { eq: false } }, fields: { collection: { eq: "info" } }},
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
       nodes {
         excerpt
         fields {
@@ -83,6 +87,7 @@ export const pageQuery = graphql`
           title
           description
           tags
+          draft
         }
       }
     }

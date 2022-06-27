@@ -36,6 +36,9 @@ exports.createPages = async({ graphql, actions, reporter }) => {
         ) {
           nodes {
             id
+            frontmatter {
+              draft
+            }
             fields {
               slug
               collection
@@ -64,7 +67,7 @@ exports.createPages = async({ graphql, actions, reporter }) => {
     const works = []
     const blog = []
     const categories = [
-        { name: 'info', posts: info, template: blogPost },
+        { name: 'info', posts: info, template: worksPost },
         { name: 'works', posts: works, template: worksPost },
         { name: 'blog', posts: blog, template: blogPost },
     ]
@@ -72,7 +75,10 @@ exports.createPages = async({ graphql, actions, reporter }) => {
     if (posts.length > 0) {
         categories.forEach((category) => {
             posts.forEach((post) => {
-                if (post.fields.collection === category.name) {
+                if (
+                    (post.frontmatter.draft || false) === false &&
+                    post.fields.collection === category.name
+                ) {
                     category.posts.push(post);
                 }
             })
@@ -138,6 +144,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       category: String
       date: Date @dateformat
       tags: [String]
+      draft: Boolean
     }
 
     type Fields {

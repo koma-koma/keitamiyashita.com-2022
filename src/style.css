@@ -77,6 +77,13 @@ html {
 
 body {
     font-family: var(--font-body);
+    font-size: var(--fontSize-0);
+    font-weight: var(--fontWeight-normal);
+    color: var(--color-text);
+}
+
+nav {
+    font-family: var(--font-body);
     font-size: var(--fontSize-1);
     font-weight: var(--fontWeight-normal);
     color: var(--color-text);
@@ -160,7 +167,7 @@ p {
     line-height: var(--lineHeight-relaxed);
     --baseline-multiplier: 0.179;
     --x-height-multiplier: 0.35;
-    margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+    margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
     padding: var(--spacing-0);
 }
 
@@ -199,7 +206,7 @@ blockquote {
     margin-right: var(--spacing-8);
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
     border-left: var(--spacing-1) solid var(--color-primary);
-    font-size: var(--fontSize-2);
+    font-size: var(--fontSize-0);
     font-style: italic;
     margin-bottom: var(--spacing-8);
 }
@@ -266,35 +273,45 @@ a:focus {
     margin: 0;
 }
 
-.post-list-item {
+.works-list-item {
     margin-bottom: var(--spacing-8);
     margin-top: var(--spacing-8);
     transform: scale(1.0);
     transition: transform 300ms;
 }
 
-.post-list-item:hover {
-    transform: scale(1.025);
+.works-list-item:hover {
+    transform: scale(1.01);
     transition: transform 300ms;
 }
 
-.post-list-item a {
+.works-list-item a {
     opacity: 1;
 }
 
+.post-list-item {
+    margin: 32px 0;
+}
+
 .post-list-item p {
+    font-size: 0.9rem;
     margin-bottom: var(--spacing-0);
 }
 
+.post-list-item small {
+    font-size: 0.8rem;
+}
+
 .post-list-item h2 {
-    font-size: var(--fontSize-4);
+    font-size: 1.1rem;
+    font-weight: var(--fontWeight-semibold);
     color: var(--color-primary);
-    margin-bottom: var(--spacing-2);
-    margin-top: var(--spacing-0);
+    margin-bottom: 4px;
+    margin-top: 16px;
 }
 
 .post-list-item header {
-    margin-bottom: var(--spacing-4);
+    margin-bottom: 8px;
 }
 
 .header-link-home {
@@ -321,16 +338,20 @@ a:focus {
 }
 
 .blog-post header h1 {
-    margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
 }
 
 .blog-post header p {
-    font-size: var(--fontSize-2);
+    font-size: 0.9rem;
     font-family: var(--font-heading);
+    margin-bottom: 16px;
 }
 
 .blog-post-nav ul {
     margin: var(--spacing-0);
+    font-size: 0.9rem;
 }
 
 .gatsby-highlight {

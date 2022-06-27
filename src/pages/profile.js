@@ -68,7 +68,7 @@ const Profile = ({ data, location }) => {
                   list.list.map((item) => {
                     const desc = <span style={{ marginLeft: '56px' }}>{item.item}</span>
                     return (
-                      <li key={item.key} style={{ margin: '8px 0' }}>
+                      <li key={item.key} style={{ margin: '4px 0' }}>
                         <span style={{ position: 'absolute', fontWeight: 500 }}>{item.year}</span>
                         {item.url ? <a target="_blank" href={item.url} >{desc}</a> : desc}
                       </li>

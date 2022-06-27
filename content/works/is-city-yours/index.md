@@ -2,8 +2,9 @@
 title: Kenta Tanaka - Is City Yours?
 date: "2018-11-25"
 category: 'client'
-tags: ["exhibition", "soundart"]
-image: "./image.jpg"
+tags: ["exhibition", "sound", "engineering"]
+image: "./02.jpg"
+draft: false
 ---
 
 サウンドアーティスト田中堅大の作品「Is the City Ours ?」において、物体検出ライブラリであるYOLOを用いたアノテーションシステム/ミュージックシーケンサシステムの開発を担当した。
@@ -15,5 +16,24 @@ This sound installation aimed to aurally and visually recompose the city with ci
 ( Kenta Tanaka | Urban Composition#01 - Is the City Ours? より引用 )
 
 ![](./01.jpg)
+
 ![](./02.jpg)
+
 ![](./03.jpg)
+
+
+```
+Date: November 25th 2018
+Place: Shibaura House
+
+Credit:
+-
+Artist: Kenta Tanaka
+-
+Kenta Tanaka: Composition, Sound Programming
+Keita Miyashita: Programming
+-
+Workshop Organizer: Ayumi Han, Keisuke Shimakage, Kenta Tanaka
+Workshop Partcipants: Soda Tomoe, Rintaro Ogiwara, Shohei Homma, Nanako Rikiishi
+Photo by Ryuichiro Suzuki
+```
