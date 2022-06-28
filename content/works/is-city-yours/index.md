@@ -1,7 +1,7 @@
 ---
 title: Kenta Tanaka - Is City Yours?
 date: "2018-11-25"
-category: 'client'
+category: 'collaboration'
 tags: ["exhibition", "sound", "engineering"]
 image: "./02.jpg"
 draft: false

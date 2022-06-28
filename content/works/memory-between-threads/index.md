@@ -1,7 +1,7 @@
 ---
 title: Group Exhibition - 記憶の織り目｜Memories Between Thread
 date: "2021-09"
-category: 'art'
+category: 'collaboration'
 tags: ["exhibition", "engineering"]
 image: "./image.jpeg"
 draft: false

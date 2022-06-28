@@ -9,7 +9,7 @@ const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   const [art, setArt] = React.useState(true);
-  const [client, setClient] = React.useState(true);
+  const [collab, setCollab] = React.useState(true);
 
   if (posts.length === 0) {
     return (
@@ -32,24 +32,25 @@ const About = ({ data, location }) => {
             style={{
               backgroundColor: art ? 'black' : null,
               color: art ? 'white' : null,
-              padding: '1px',
+              padding: '1px 4px',
               marginLeft: '16px',
               marginRight: '10px',
               cursor: "pointer",
             }}
             onClick={() => setArt(!art)}
           >
-            artwokrs
+            solo
           </span>
           <span
             style={{
-              background: client ? 'black' : null,
-              color: client ? 'white' : null,
+              background: collab ? 'black' : null,
+              color: collab ? 'white' : null,
               cursor: "pointer",
+              padding: '1px 4px',
             }}
-            onClick={() => setClient(!client)}
+            onClick={() => setCollab(!collab)}
           >
-            clientwokrs
+            collaboration
           </span>
         </div>
       </div>
@@ -60,8 +61,8 @@ const About = ({ data, location }) => {
 
           if (category === 'art') {
             if (!art) return;
-          } else if (category === 'client') {
-            if (!client) return;
+          } else if (category === 'collaboration') {
+            if (!collab) return;
           }
 
           return (

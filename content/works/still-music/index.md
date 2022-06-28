@@ -1,6 +1,6 @@
 ---
 title: Still Music
-date: "2017"
+date: "2017-03"
 category: 'art'
 tags: ["sound", "music", "generative", "interactive"]
 image: "./01.png"

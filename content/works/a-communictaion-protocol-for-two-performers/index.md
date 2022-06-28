@@ -1,6 +1,6 @@
 ---
 title: A Communication Protocol for Two Performers
-date: "2022"
+date: "2022-05"
 category: 'art'
 tags: ["sound", "communication", "device", "music"]
 image: "./image.jpg"
