@@ -1,6 +1,7 @@
 require("dotenv").config()
 
 module.exports = {
+    // pathPrefix: `/index`,
     siteMetadata: {
         title: `keitamiyashita.com`,
         author: {
@@ -154,4 +155,5 @@ module.exports = {
             },
         },
     ],
+    pathPrefix: `/index`,
 }
