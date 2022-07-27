@@ -24,13 +24,18 @@ jobs:
 
      - name: build
        run: npm run build
+       
+     - name: rename
+       run: mv ./public ./index
 
      # デプロイする
-     - name: Deploy
-       run: |
-         # SCPで転送する
-         echo "${{ secrets.EC2_PRIVATE_KEY }}" > private_key
-         chmod 600 private_key
-         mv ./public ./index
-         ssh -oStrictHostKeyChecking=no -i private_key ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} rm -rf /var/www/html/index/
-         scp -oStrictHostKeyChecking=no -i private_key -r ./index ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }}:/var/www/html/
+     - name: deploy to server
+       uses: AEnterprise/rsync-deploy@v1.0
+       env:
+         DEPLOY_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
+         ARGS: "-avzr --delete"
+         SERVER_PORT: ${{ secrets.EC2_PORT }}
+         FOLDER: "./index/"
+         SERVER_IP: ${{ secrets.EC2_HOST_NAME }}
+         USERNAME: ${{ secrets.EC2_USER_NAME }}
+         SERVER_DESTINATION: ${{ secrets.EC2_DESTINATION }}
