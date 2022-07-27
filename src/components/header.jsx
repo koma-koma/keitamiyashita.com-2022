@@ -52,10 +52,10 @@ const Header = ({ location }) => {
     //     </div>
     // )
     const items = [
-        { name: 'profile', href: '/profile' },
-        { name: 'info', href: '/info' },
-        { name: 'works', href: '/works' },
-        { name: 'logs', href: '/logs' },
+        { name: 'profile', href: 'profile' },
+        { name: 'info', href: 'info' },
+        { name: 'works', href: 'works' },
+        { name: 'logs', href: 'logs' },
     ];
     const links = [
         { name: 'mail', href: 'mailto:koma.keitamiyashita@gmail.com' },
@@ -75,10 +75,10 @@ const Header = ({ location }) => {
             <nav>
                 <ul style={{ listStyle: "none" }}>
                     {items.map((item) => {
-                        const isActive = location.pathname === item.href
+                        const isActive = location.pathname === rootPath + item.href
                         return (
                             <li style={{ margin: '8px 0' }} key={item.name}>
-                                <Link to={!isActive && item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
+                                <Link to={!isActive && rootPath + item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
                             </li>
                         )
                     })}
