@@ -17,16 +17,13 @@ jobs:
      - name: setup node
        uses: actions/setup-node@v1
        with:
-          node-version: '14.x'
+          node-version: '15.x'
 
      - name: install
-       run: npm ci
+       run: npm ci --force
 
      - name: build
        run: npm run build
-       
-     - name: rename
-       run: mv ./public ./index
 
      # デプロイする
      - name: deploy to server
@@ -35,7 +32,7 @@ jobs:
          DEPLOY_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
          ARGS: "-avzr --delete"
          SERVER_PORT: ${{ secrets.EC2_PORT }}
-         FOLDER: "./index/"
+         FOLDER: "./public/"
          SERVER_IP: ${{ secrets.EC2_HOST_NAME }}
          USERNAME: ${{ secrets.EC2_USER_NAME }}
          SERVER_DESTINATION: ${{ secrets.EC2_DESTINATION }}
