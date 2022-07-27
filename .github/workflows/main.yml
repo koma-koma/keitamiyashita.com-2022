@@ -15,8 +15,7 @@ jobs:
        uses: actions/checkout@v2
 
      - name: Create dot env file
-     - shell: bash
-       run: |
+     - run: |
          touch .env
          echo "TYPEKIT_ID=${{ secrets.TYPEKIT_ID }}" >> .env
 
