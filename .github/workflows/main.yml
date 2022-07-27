@@ -15,9 +15,7 @@ jobs:
        uses: actions/checkout@v2
 
      - name: Create dot env file
-     - run: |
-         touch .env
-         echo "TYPEKIT_ID=${{ secrets.TYPEKIT_ID }}" >> .env
+     - run: touch .env && echo "TYPEKIT_ID=${{ secrets.TYPEKIT_ID }}" >> .env
 
      - name: setup node
        uses: actions/setup-node@v1
