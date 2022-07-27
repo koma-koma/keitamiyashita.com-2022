@@ -13,8 +13,7 @@ jobs:
      # BranchをCheckout
      - name: Checkout
        uses: actions/checkout@v2
-       
-      
+
      - name: Create dot env file
      - shell: bash
        run: |
