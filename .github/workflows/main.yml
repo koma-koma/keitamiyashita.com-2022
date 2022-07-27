@@ -13,10 +13,8 @@ jobs:
      # BranchをCheckout
      - name: Checkout
        uses: actions/checkout@v2
-       
-      
+
      - name: Create dot env file
-     - shell: bash
        run: |
          touch .env
          echo "TYPEKIT_ID=${{ secrets.TYPEKIT_ID }}" >> .env
