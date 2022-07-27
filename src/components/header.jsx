@@ -51,11 +51,14 @@ const Header = ({ location }) => {
     //         <Link className="navbar-link-logs" to="/logs">logs</Link>
     //     </div>
     // )
+    const rootPath = `${__PATH_PREFIX__}/`
+    const isRootPath = location.pathname === rootPath
+
     const items = [
-        { name: 'profile', href: 'profile' },
-        { name: 'info', href: 'info' },
-        { name: 'works', href: 'works' },
-        { name: 'logs', href: 'logs' },
+        { name: 'profile', href: rootPath + 'profile' },
+        { name: 'info', href: rootPath + 'info' },
+        { name: 'works', href: rootPath + 'works' },
+        { name: 'logs', href: rootPath + 'logs' },
     ];
     const links = [
         { name: 'mail', href: 'mailto:koma.keitamiyashita@gmail.com' },
@@ -65,9 +68,6 @@ const Header = ({ location }) => {
         { name: 'youtube', href: 'https://www.youtube.com/channel/UCD473UcDGCulkyMBBmIeytQ' },
     ];
 
-    const rootPath = `${__PATH_PREFIX__}/`
-    const isRootPath = location.pathname === rootPath
-
     return (
         <header style={navbarStyles} className="header">
             <Link to={!isRootPath && "/"} style={{ textDecoration: isRootPath && 'underline', opacity: isRootPath && 1 }}><h1 style={{ marginTop: '-4px', marginBottom: '32px', fontSize: '1.25rem', fontWeight: 500 }}>keitamiyashita.com</h1>
@@ -75,10 +75,10 @@ const Header = ({ location }) => {
             <nav>
                 <ul style={{ listStyle: "none" }}>
                     {items.map((item) => {
-                        const isActive = location.pathname === rootPath + item.href
+                        const isActive = location.pathname === item.href
                         return (
                             <li style={{ margin: '8px 0' }} key={item.name}>
-                                <Link to={!isActive && rootPath + item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
+                                <Link to={!isActive && item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
                             </li>
                         )
                     })}
