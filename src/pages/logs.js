@@ -104,7 +104,7 @@ export const pageQuery = graphql`
       filter: { frontmatter: { draft: { eq: false } }, fields: { collection: { eq: "blog" } } },
       sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
-        excerpt
+        excerpt(truncate: true)
         fields {
           slug
         }
