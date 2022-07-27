@@ -32,5 +32,5 @@ jobs:
          echo "${{ secrets.EC2_PRIVATE_KEY }}" > private_key
          chmod 600 private_key
          mv ./public ./index
-         ssh -oStrictHostKeyChecking=no -i private_key ./index ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} rm -rf /var/www/html/index/
+         ssh -oStrictHostKeyChecking=no -i private_key ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }} rm -rf /var/www/html/index/
          scp -oStrictHostKeyChecking=no -i private_key -r ./index ${{ secrets.EC2_USER_NAME }}@${{ secrets.EC2_HOST_NAME }}:/var/www/html/
