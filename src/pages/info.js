@@ -57,7 +57,6 @@ const BlogIndex = ({ data, location }) => {
       {header}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          console.log(post);
           const title = post.frontmatter.title || post.fields.slug
 
           return (
