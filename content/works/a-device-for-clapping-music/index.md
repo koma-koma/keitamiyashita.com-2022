@@ -3,7 +3,7 @@ title: A Device for Clapping Music
 date: "2022-05"
 category: 'art'
 tags: ["music", "device"]
-image: "./image.jpg"
+image: "./main.jpg"
 draft: false
 ---
 
@@ -12,7 +12,7 @@ draft: false
 2022年5月20日から25日までの期間開催された個展「2人のパフォーマーのための通信規約 A Communication Protocol for Two Performers」にて展示を行った。
 
 
-![image](./image.jpg)
+![image](./main.jpg)
 
 
 ![image](./01.jpg)
