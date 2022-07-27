@@ -55,10 +55,10 @@ const Header = ({ location }) => {
     const isRootPath = location.pathname === rootPath
 
     const items = [
-        { name: 'profile', href: '/profile' },
-        { name: 'info', href: '/info' },
-        { name: 'works', href: '/works' },
-        { name: 'logs', href: '/logs' },
+        { name: 'profile', href: 'profile' },
+        { name: 'info', href: 'info' },
+        { name: 'works', href: 'works' },
+        { name: 'logs', href: 'logs' },
     ];
     const links = [
         { name: 'mail', href: 'mailto:koma.keitamiyashita@gmail.com' },
@@ -67,6 +67,7 @@ const Header = ({ location }) => {
         { name: 'github', href: 'http://github.com/koma-koma' },
         { name: 'youtube', href: 'https://www.youtube.com/channel/UCD473UcDGCulkyMBBmIeytQ' },
     ];
+
 
     return (
         <header style={navbarStyles} className="header">
@@ -78,7 +79,7 @@ const Header = ({ location }) => {
                         const isActive = location.pathname === rootPath + item.href
                         return (
                             <li style={{ margin: '8px 0' }} key={item.name}>
-                                <Link to={!isActive && item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
+                                <Link to={!isActive && '/' + item.href} style={{ textDecoration: isActive && 'underline', opacity: isActive && 1 }}>{item.name}</Link>
                             </li>
                         )
                     })}
