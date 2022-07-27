@@ -65,7 +65,8 @@ const Header = ({ location }) => {
         { name: 'youtube', href: 'https://www.youtube.com/channel/UCD473UcDGCulkyMBBmIeytQ' },
     ];
 
-    const isRootPath = location.pathname === "/"
+    const rootPath = `${__PATH_PREFIX__}/`
+    const isRootPath = location.pathname === rootPath
 
     return (
         <header style={navbarStyles} className="header">
