@@ -5,16 +5,18 @@ module.exports = {
     siteMetadata: {
         title: `keitamiyashita.com`,
         author: {
-            name: `Keita Miyashita`,
-            summary: `artist / engineer.`,
+            name: `MIYASHITA Keita`,
+            summary: `artist / engineer / improviser.`,
         },
-        description: `keita miyashita website`,
+        description: `miyashita keita's website`,
         siteUrl: `https://keitamiyashita.com/`,
         social: {
-            twitter: `kylemathews`,
+            twitter: `@internet_club2`,
         },
     },
     plugins: [
+        `gatsby-plugin-sitemap`,
+        `gatsby-plugin-robots-txt`,
         `gatsby-plugin-image`,
         {
             resolve: `gatsby-source-filesystem`,
