@@ -74,7 +74,13 @@ const About = ({ data, location }) => {
               >
                 <Link to={post.fields.slug} itemProp="url">
                   {post.frontmatter.image && <GatsbyImage image={getImage(post.frontmatter.image)} alt={post.fields.title} />}
-                  <h2 style={{ display: 'inline-block', fontSize: '1rem', marginTop: '16px', maxWidth: 'calc(100% - 48px)' }}>
+                  <h2 style={{
+                    display: 'inline-block',
+                    fontSize: '1rem',
+                    fontWeight: 400,
+                    marginTop: '8px',
+                    maxWidth: 'calc(100% - 48px)'
+                  }}>
                     <span itemProp="headline">{title}</span>
                   </h2>
                   <span style={{
@@ -83,7 +89,7 @@ const About = ({ data, location }) => {
                     position: 'absolute',
                     right: 0,
                     textAlign: 'right',
-                    marginTop: '14px'
+                    marginTop: '4px'
                   }} >{post.frontmatter.date}</span>
                 </Link>
               </article>
