@@ -6,7 +6,7 @@ draft: false
 description:
 ---
 
-[\(4\) True my heart \(きしめん\)高音質 \- YouTube](https://www.youtube.com/watch?v=2iZVvkxiGMY)
+[True my heart \(きしめん\)高音質 \- YouTube](https://www.youtube.com/watch?v=2iZVvkxiGMY)
 
 最近これ一生聴いてるな…
 
