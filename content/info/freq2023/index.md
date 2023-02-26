@@ -9,6 +9,7 @@ description: '2023年2月23日に九州大学大橋キャンパスにて開催�
 
 2023年2月23日に九州大学大橋キャンパスにて開催されるイベントfreq 2023 - メディア・テクノロジーから生まれる音 - に参加しました。
 100Vの電気と照明を使ったパフォーマンス。
+[Two Electrical Contacts for Clapping Music](../two_electrical_contacts_for_clapping_music)
 
 [freq 2023 - メディア・テクノロジーから生まれる音 -](https://freq2023.peatix.com/)
 
