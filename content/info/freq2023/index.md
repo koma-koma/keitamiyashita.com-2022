@@ -1,6 +1,6 @@
 ---
 title: freq 2023 - メディア・テクノロジーから生まれる音 - に参加します
-date: "2022-02-22"
+date: "2023-02-22"
 tags: ["event"]
 category: info
 draft: false
