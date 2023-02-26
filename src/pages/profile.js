@@ -28,6 +28,7 @@ const lists = [
   },
   {
     name: 'performance', list: [
+      { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 -', url: 'https://freq2023.peatix.com/' },
       { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
       { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA', url: 'https://nxpclab.info/vol.54/' }
     ]
@@ -62,7 +63,7 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        1995年 北海道生まれ。アーティスト / エンジニア。電気・情報・通信・音などを扱った作品の制作や、サウンドパフォーマンスを行う。
+        1995年 北海道生まれ。アーティスト / エンジニア。電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作やパフォーマンスを行う。
       </p>
       {
         lists.map((list) => {
