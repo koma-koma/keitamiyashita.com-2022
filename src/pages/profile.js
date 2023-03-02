@@ -63,7 +63,10 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        1995年 北海道生まれ。アーティスト / エンジニア。電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作やパフォーマンスを行う。
+        1995年 北海道生まれ。福岡県在住。アーティスト / エンジニア。電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作やパフォーマンスを行う。
+      </p>
+      <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
+        Born in 1995 in Hokkaido, Japan. Lives and works in Fukuoka Prefecture. Artist / Engineer. He creates artworks and performances based on the relationship between human beings and today's technologies such as electricity, information, and communication.
       </p>
       {
         lists.map((list) => {
