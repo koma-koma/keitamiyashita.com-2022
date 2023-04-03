@@ -3,7 +3,7 @@ title: BEAT/BIT
 date: "2019"
 category: 'art'
 tags: ["sound", "communication", "device"]
-image: "./image.png"
+image: "./icc_04.jpeg"
 draft: false
 ---
 

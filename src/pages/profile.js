@@ -57,7 +57,7 @@ const Profile = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="profile" />
-      <StaticImage src="../images/profile.jpg" alt="profile image" width={720} />
+      <StaticImage src="../images/Screen Shot 2023-03-18 at 14.18.33.png" alt="profile image" width={720} />
       <h1 style={{ margin: '16px 0 0 0', fontSize: '1rem' }}>
         KEITA Miyashita | 宮下恵太
       </h1>
