@@ -32,3 +32,9 @@ description:
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">やきいもパター <a href="https://t.co/EJoJRKzIGo">pic.twitter.com/EJoJRKzIGo</a></p>&mdash; 土井善晴 (@doiyoshiharu) <a href="https://twitter.com/doiyoshiharu/status/1644222496441520128?ref_src=twsrc%5Etfw">April 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 やきいもパターて。
+
+あ、
+
+そう、こういうお味噌汁のおおらかさ、というところを最近は大切にしていて、それは電気やコンピューティングにおいても通ずるところがある。もはや料理と同じくらい、いやそれ以上にコンピュータサイエンスは生活の一部ですから。わたしたちとあなたがたの間にある窓を開けて、顔を浸してご覧なさいよ。やさしくね。という気持ちでやっていきだ。いや、そんな気持ちは無いけれど。
+
+0か1か、わかれば後はなんだっていいよ、というバイナリの思考はある意味おおらかなものだ、と思う。二項対立や二元論的なこととは違くて。こういうことを考えている。
