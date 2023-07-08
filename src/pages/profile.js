@@ -28,6 +28,7 @@ const lists = [
   },
   {
     name: 'performance', list: [
+      { key: 'stain', year: 2023.5, item: 'stain', url: 'https://stain.peatix.com/' },
       { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 -', url: 'https://freq2023.peatix.com/' },
       { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
       { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA', url: 'https://nxpclab.info/vol.54/' }
