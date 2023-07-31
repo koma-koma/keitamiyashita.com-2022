@@ -16,7 +16,8 @@ const lists = [
   },
   {
     name: 'exhibition', list: [
-      { key: 'solo2022', year: 2022.7, item: "ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする - NTTインターコミュニケーション・センター[ICC]" },
+      { key: 'threshold', year: 2023.8, item: "閾 / Threshold - 九州大学芸術工学図書館映像音響ラウンジ", url: 'https://www.design.kyushu-u.ac.jp/topics/18514/' },
+      { key: 'icckids2022', year: 2022.7, item: "ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする - NTTインターコミュニケーション・センター[ICC]", url: 'https://www.ntticc.or.jp/ja/exhibitions/2022/icc-kids-program-2022-tools-for-play/' },
       { key: 'solo2022', year: 2022.5, item: "個展 2人のパフォーマーのための通信規約 - 'meee' Gallery Tokyo" },
       { key: 'kioku', year: 2021.9, item: '記憶の織り目｜Memories Between Thread - Sta. (作品制作/展示設営)', url: 'https://www.tokyoartbeat.com/events/-/2021%2F572D' },
       { key: 'cgc26', year: 2021.3, item: 'CGC26 オンライン・ノミネート作品展' },
