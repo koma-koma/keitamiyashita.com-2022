@@ -1,5 +1,5 @@
 ---
-title: 【展示】閾 / Threshold
+title: 【芸工図書館】サイエンス・プランター Vol.26(7/31) スペシャルギャラリートーク
 date: "2023-07-27"
 tags: ["event"]
 category: info
