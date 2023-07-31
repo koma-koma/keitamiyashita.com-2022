@@ -1,0 +1,12 @@
+---
+title: 【展示】閾 / Threshold
+date: "2023-07-27"
+tags: ["event"]
+category: info
+draft: false
+description: '来週月曜日7/31の17:00から、九大の牧野先生・城先生と展示に関する短いトークをします。…'
+---
+
+来週月曜日7/31の17:00から、九大の牧野先生・城先生と展示に関する短いトークをします。
+
+[【芸工図書館】サイエンス・プランター Vol.26(7/31) スペシャルギャラリートーク](https://www.lib.kyushu-u.ac.jp/ja/events/62708)
