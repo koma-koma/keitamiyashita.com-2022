@@ -16,6 +16,7 @@ const lists = [
   },
   {
     name: 'exhibition', list: [
+      { key: 'ourlights', year: 2024.1, item: "わたしたちの光、おおらかなしるし | our lights, tolerant signs - EUREKA（福岡）", url: 'https://eurekafukuoka.com/2041/' },
       { key: 'threshold', year: 2023.8, item: "閾 / Threshold - 九州大学芸術工学図書館映像音響ラウンジ", url: 'https://www.design.kyushu-u.ac.jp/topics/18514/' },
       { key: 'icckids2022', year: 2022.7, item: "ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする - NTTインターコミュニケーション・センター[ICC]", url: 'https://www.ntticc.or.jp/ja/exhibitions/2022/icc-kids-program-2022-tools-for-play/' },
       { key: 'solo2022', year: 2022.5, item: "個展 2人のパフォーマーのための通信規約 - 'meee' Gallery Tokyo" },
@@ -66,9 +67,10 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        1995年北海道生まれ、福岡市在住。
+        1995年北海道生まれ。<br />
         電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作を行う。ギターやスピーカ、ミキサーなどを用いた実験的な即興演奏活動等も行っている。<br />
-        第25回文化庁メディア芸術祭にて音による通信装置を用いた作品「BEAT/BIT」がアート部門審査委員会推薦作品に選出(2022)。主な展示として個展「2人のパフォーマーのための通信規約」（'meee' Gallery Tokyo、東京、2022）、グループ展「ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする」(NTTインターコミュニケーション・センター[ICC]、東京、2022)など。
+        第25回文化庁メディア芸術祭にて音による通信装置を用いた作品「BEAT/BIT」がアート部門審査委員会推薦作品に選出(2022)。主な展示として個展「わたしたちの光、おおらかなしるし | our lights, tolerant signs」（EUREKA、福岡、2024）、グループ展「ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする」(NTTインターコミュニケーション・センター[ICC]、東京、2022)など。
+
 
       </p>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
