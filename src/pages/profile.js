@@ -30,7 +30,7 @@ const lists = [
   },
   {
     name: 'performance', list: [
-      { key: 'hertz2nd', year: 2023.5, item: 'hertz "2nd Anniversary"', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
+      { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary"', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
       { key: 'stain', year: 2023.5, item: 'ポール・デマリニス パフォーマンス＆トーク「stain」', url: 'https://stain.peatix.com/' },
       { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 -', url: 'https://freq2023.peatix.com/' },
       { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
