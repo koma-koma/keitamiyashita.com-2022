@@ -1,5 +1,5 @@
 ---
-title: 【出演】サイバーターン@
+title: 【出演】サイバーターン4@Circus Tokyo
 date: "2024-02-23"
 tags: ["event"]
 category: info
