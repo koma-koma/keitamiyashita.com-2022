@@ -7,7 +7,7 @@ image: "./00.JPG"
 draft: false
 ---
 
-
+power transformer, wooden board, electric wire, jack connector
 
 ![image](./00.JPG)
 
