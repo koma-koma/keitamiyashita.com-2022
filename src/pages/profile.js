@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 const lists = [
   {
     name: 'awards', list: [
+      { key: 'ymaa', year: 2024, item: 'やまなしメディア芸術アワード2023-24入選', url: 'https://y-artaward.jp/' },
       { key: 'megei', year: 2022, item: '第25回文化庁メディア芸術祭 アート部門審査委員会推薦作品 選出', url: 'https://j-mediaarts.jp/award/art/' },
       { key: 'cgc26', year: 2021, item: '第26回学生CGコンテストアート部門 ノミネート', url: 'https://archive.campusgenius.jp/2020/art/' },
       { key: 'adaa', year: 2021, item: '2020年度Asia Digital Art Award優秀賞受賞', url: 'https://adaa.jp/ja/winners/winners2020.html' },
@@ -16,6 +17,7 @@ const lists = [
   },
   {
     name: 'exhibition', list: [
+      { key: 'ymaa2023-24', year: 2024.3, item: "やまなしメディア芸術アワード2023-24 入選作品展", url: 'https://y-artaward.jp/exhibition.php' },
       { key: 'ourlights', year: 2024.1, item: "わたしたちの光、おおらかなしるし | our lights, tolerant signs - EUREKA（福岡）", url: 'https://eurekafukuoka.com/2041/' },
       { key: 'threshold', year: 2023.8, item: "閾 / Threshold - 九州大学芸術工学図書館映像音響ラウンジ", url: 'https://www.design.kyushu-u.ac.jp/topics/18514/' },
       { key: 'icckids2022', year: 2022.7, item: "ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする - NTTインターコミュニケーション・センター[ICC]", url: 'https://www.ntticc.or.jp/ja/exhibitions/2022/icc-kids-program-2022-tools-for-play/' },
@@ -30,9 +32,11 @@ const lists = [
   },
   {
     name: 'performance', list: [
-      { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary"', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
-      { key: 'stain', year: 2023.5, item: 'ポール・デマリニス パフォーマンス＆トーク「stain」', url: 'https://stain.peatix.com/' },
-      { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 -', url: 'https://freq2023.peatix.com/' },
+      { key: 'freq2024', year: 2024.5, item: 'freq - 2405012', url: 'https://freq-240512.peatix.com/' },
+      { key: 'cyberturn4', year: 2024.2, item: 'サイバーターン4 - Circus Tokyo"', url: 'https://cyberturn.notion.site/e482f3fbc188434caaa9e15861600778?pvs=4' },
+      { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary" - Kieth Flack', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
+      { key: 'stain', year: 2023.5, item: 'ポール・デマリニス パフォーマンス＆トーク「stain」- 九州大学芸術工学部音響特殊棟', url: 'https://stain.peatix.com/' },
+      { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 - - 九州大学芸術工学部音響特殊棟', url: 'https://freq2023.peatix.com/' },
       { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
       { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA', url: 'https://nxpclab.info/vol.54/' }
     ]
@@ -45,7 +49,8 @@ const lists = [
   },
   {
     name: 'work', list: [
-      { key: 'kyu-dai', year: '2022.6-', item: '九州大学芸術工学研究院テクニカルスタッフ' },
+      { key: 'ycam', year: '2024.5-', item: '山口市芸術情報センター[YCAM]' },
+      { key: 'kyu-dai', year: '2022.6-2024.5', item: '九州大学芸術工学研究院テクニカルスタッフ' },
     ]
   },
   // {
