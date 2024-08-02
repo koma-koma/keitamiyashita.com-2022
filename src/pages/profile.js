@@ -32,13 +32,13 @@ const lists = [
   },
   {
     name: 'performance', list: [
-      { key: 'freq2024', year: 2024.5, item: 'freq - 2405012', url: 'https://freq-240512.peatix.com/' },
-      { key: 'cyberturn4', year: 2024.2, item: 'サイバーターン4 - Circus Tokyo"', url: 'https://cyberturn.notion.site/e482f3fbc188434caaa9e15861600778?pvs=4' },
-      { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary" - Kieth Flack', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
-      { key: 'stain', year: 2023.5, item: 'ポール・デマリニス パフォーマンス＆トーク「stain」- 九州大学芸術工学部音響特殊棟', url: 'https://stain.peatix.com/' },
-      { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 - - 九州大学芸術工学部音響特殊棟', url: 'https://freq2023.peatix.com/' },
-      { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - Permian, Tokyo ' },
-      { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA', url: 'https://nxpclab.info/vol.54/' }
+      { key: 'freq2024', year: 2024.5, item: 'freq - 2405012（九州大学芸術工学部音響特殊棟、福岡）', url: 'https://freq-240512.peatix.com/' },
+      { key: 'cyberturn4', year: 2024.2, item: 'サイバーターン4（Circus Tokyo、東京）', url: 'https://cyberturn.notion.site/e482f3fbc188434caaa9e15861600778?pvs=4' },
+      { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary"（Kieth Flack、福岡）', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
+      { key: 'stain', year: 2023.5, item: 'ポール・デマリニス パフォーマンス＆トーク「stain」（九州大学芸術工学部音響特殊棟、福岡）', url: 'https://stain.peatix.com/' },
+      { key: 'freq2023', year: 2023.2, item: 'freq 2023 - メディア・テクノロジーから生まれる音 - （九州大学芸術工学部音響特殊棟、福岡）', url: 'https://freq2023.peatix.com/' },
+      { key: 'permian', year: 2022.4, item: 'trio - miyashita keita, takara mahaya, Akio James - （Permian、東京）' },
+      { key: 'nxpc', year: 2022.3, item: 'NxPC.Live vol.54 "密" HISOKA（オンライン）', url: 'https://nxpclab.info/vol.54/' }
     ]
   },
   {
@@ -49,8 +49,8 @@ const lists = [
   },
   {
     name: 'work', list: [
-      { key: 'ycam', year: '2024.5-', item: '山口市芸術情報センター[YCAM]' },
-      { key: 'kyu-dai', year: '2022.6-2024.5', item: '九州大学芸術工学研究院テクニカルスタッフ' },
+      { key: 'ycam', year: '2024.5-', item: '　　　　山口情報芸術センター[YCAM]' },
+      { key: 'kyu-dai', year: '2022.6-2024.5', item: '　　　　九州大学芸術工学研究院テクニカルスタッフ' },
     ]
   },
   // {
@@ -72,11 +72,9 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        1995年北海道生まれ。<br />
+        アーティスト／エンジニア／即興演奏家。1995年北海道生まれ、福岡市在住。<br />
         電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作を行う。ギターやスピーカ、ミキサーなどを用いた実験的な即興演奏活動等も行っている。<br />
         第25回文化庁メディア芸術祭にて音による通信装置を用いた作品「BEAT/BIT」がアート部門審査委員会推薦作品に選出(2022)。主な展示として個展「わたしたちの光、おおらかなしるし | our lights, tolerant signs」（EUREKA、福岡、2024）、グループ展「ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする」(NTTインターコミュニケーション・センター[ICC]、東京、2022)など。
-
-
       </p>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
         Born in 1995 in Hokkaido, Japan. Lives and works in Fukuoka Prefecture. Artist / Engineer. He creates artworks and performances based on the relationship between human beings and today's technologies such as electricity, information, and communication.
