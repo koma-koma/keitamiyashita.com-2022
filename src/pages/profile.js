@@ -72,12 +72,15 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        アーティスト／エンジニア／即興演奏家。1995年北海道生まれ、福岡市在住。<br />
-        電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作を行う。ギターやスピーカ、ミキサーなどを用いた実験的な即興演奏活動等も行っている。<br />
+        北海道生まれ、山口市在住。<br/>
+        電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作を行う。ギターやスピーカ、ミキサーなどを用いた実験的な即興演奏活動等も行っている。<br/>
         第25回文化庁メディア芸術祭にて音による通信装置を用いた作品「BEAT/BIT」がアート部門審査委員会推薦作品に選出(2022)。主な展示として個展「わたしたちの光、おおらかなしるし | our lights, tolerant signs」（EUREKA、福岡、2024）、グループ展「ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする」(NTTインターコミュニケーション・センター[ICC]、東京、2022)など。
       </p>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        Born in 1995 in Hokkaido, Japan. Lives and works in Fukuoka Prefecture. Artist / Engineer. He creates artworks and performances based on the relationship between human beings and today's technologies such as electricity, information, and communication.
+        Born in Hokkaido, currently based in Yamaguchi, Japan.<br/>
+        His work explores the relationship between contemporary technologies—such as electricity, information, and communication—and human experience. He is also active in experimental improvisation using guitars, speakers, mixers, and other equipment.<br/>
+        His work BEAT/BIT, a sound-based communication device, was selected as a Jury Selection in the Art Division of the 25th Japan Media Arts Festival (2022).
+Notable exhibitions include the solo show our lights, tolerant signs (EUREKA, Fukuoka, 2024) and the group exhibition ICC Kids Program 2022: Tools for Play (NTT InterCommunication Center [ICC], Tokyo, 2022).
       </p>
       {
         lists.map((list) => {
