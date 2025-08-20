@@ -61,7 +61,7 @@ const Header = ({ location }) => {
         { name: 'logs', href: 'logs/' },
     ];
     const links = [
-        { name: 'mail', href: 'mailto:koma.keitamiyashita@gmail.com' },
+        { name: 'mail', href: 'mailto:info@keitamiyashita.com' },
         { name: 'twitter', href: 'http://twitter.com/internet_club2' },
         { name: 'instagram', href: 'http://instagram.com/koma12' },
         { name: 'github', href: 'http://github.com/koma-koma' },

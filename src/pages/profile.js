@@ -16,7 +16,8 @@ const lists = [
     ]
   },
   {
-    name: 'exhibition', list: [
+    name: 'exhibitions', list: [
+      { key: 'audible-current', year: 2025.5, item: "きこえくるハミング | Audible Current - STUDIO VISIT"},
       { key: 'ymaa2023-24', year: 2024.3, item: "やまなしメディア芸術アワード2023-24 入選作品展", url: 'https://y-artaward.jp/exhibition.php' },
       { key: 'ourlights', year: 2024.1, item: "わたしたちの光、おおらかなしるし | our lights, tolerant signs - EUREKA（福岡）", url: 'https://eurekafukuoka.com/2041/' },
       { key: 'threshold', year: 2023.8, item: "閾 / Threshold - 九州大学芸術工学図書館映像音響ラウンジ", url: 'https://www.design.kyushu-u.ac.jp/topics/18514/' },
@@ -31,7 +32,7 @@ const lists = [
     ]
   },
   {
-    name: 'performance', list: [
+    name: 'performances', list: [
       { key: 'freq2024', year: 2024.5, item: 'freq - 2405012（九州大学芸術工学部音響特殊棟、福岡）', url: 'https://freq-240512.peatix.com/' },
       { key: 'cyberturn4', year: 2024.2, item: 'サイバーターン4（Circus Tokyo、東京）', url: 'https://cyberturn.notion.site/e482f3fbc188434caaa9e15861600778?pvs=4' },
       { key: 'hertz2nd', year: 2023.11, item: 'hertz "2nd Anniversary"（Kieth Flack、福岡）', url: 'https://kiethflack.net/schedule/hertz-2nd-anniversary/' },
@@ -72,7 +73,7 @@ const Profile = ({ data, location }) => {
       </h1>
       <h2 style={{ margin: '8px 0 0 0', fontSize: '0.9rem', fontWeight: 500 }}>artist / engineer / improviser</h2>
       <p style={{ marginTop: '12px', fontSize: '0.8rem' }}>
-        北海道生まれ、山口市在住。<br/>
+        アーティスト／エンジニア／即興演奏家。北海道生まれ、山口市在住。<br/>
         電気・情報・通信といった今日的なテクノロジーと人間との関係性を軸に作品制作を行う。ギターやスピーカ、ミキサーなどを用いた実験的な即興演奏活動等も行っている。<br/>
         第25回文化庁メディア芸術祭にて音による通信装置を用いた作品「BEAT/BIT」がアート部門審査委員会推薦作品に選出(2022)。主な展示として個展「わたしたちの光、おおらかなしるし | our lights, tolerant signs」（EUREKA、福岡、2024）、グループ展「ICCキッズ・プログラム2022 Tools for Play どうぐをプレイする」(NTTインターコミュニケーション・センター[ICC]、東京、2022)など。
       </p>
